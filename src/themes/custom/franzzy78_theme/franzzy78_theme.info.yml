@@ -1,0 +1,14 @@
+name: Franzzy78 theme
+type: theme
+description: Theme of Franzzy78 website.
+core: 8.x
+libraries:
+  - franzzy78_theme/global-styling
+regions:
+  header: Header
+  content: Content  # the content region is required
+  sidebar_first: 'Sidebar first'
+  footer: Footer
+logo:
+  path: 'themes/franzzy78_theme/logo.png'
+  use_default: false

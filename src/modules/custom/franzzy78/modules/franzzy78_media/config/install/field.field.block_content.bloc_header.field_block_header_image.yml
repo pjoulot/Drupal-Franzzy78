@@ -1,0 +1,27 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_header
+    - field.storage.block_content.field_block_header_image
+    - media_entity.bundle.media_image
+id: block_content.bloc_header.field_block_header_image
+field_name: field_block_header_image
+entity_type: block_content
+bundle: bloc_header
+label: 'Header Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      media_image: media_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

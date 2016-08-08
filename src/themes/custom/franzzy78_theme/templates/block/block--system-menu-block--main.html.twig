@@ -1,0 +1,6 @@
+<nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass("main-navigate")|without('role', 'aria-labelledby') }}>
+  {# Menu. #}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</nav>
