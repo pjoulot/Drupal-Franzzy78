@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_header
+id: block_content.bloc_header
+target_entity_type_id: block_content
+target_bundle: bloc_header
+default_langcode: site_default
+language_alterable: false
