@@ -30,7 +30,11 @@ a:hover {
 .header-website {
 	position: relative;
 	width: 100%;
-	min-height: 400px;
+}
+
+.header-website img {
+	width: 100%;
+	height: auto;
 }
 
 .page-container {
@@ -74,6 +78,7 @@ a:hover {
 	position: absolute;
 	top: 15px;
 	height: 75px;
+	z-index: 100;
 }
 
 .logo-container a {
@@ -110,6 +115,10 @@ a:hover {
 	margin-right: 20px;
 }
 
+.main-menu li a:hover {
+	font-weight: bold;
+}
+
 .header-main-content {
 	position: absolute;
 	margin-left: auto;
@@ -117,6 +126,17 @@ a:hover {
 	left: 0;
 	right: 0;
 	top: 130px;
+	width: 570px;
+	text-align: center;
+}
+
+.header-description {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 250px;
 	width: 570px;
 	text-align: center;
 }
@@ -150,6 +170,10 @@ a:hover {
 
 .page-content {
 	padding: 60px;
+}
+
+.main-content {
+	padding: 50px;
 }
 
 .block-services {
@@ -258,4 +282,12 @@ a:hover {
     width: 40px;
     height: 40px;
     background-position: -105px -55px;
+}
+
+input[type="submit"] {
+	padding: 10px;
+    border-radius: 10px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: solid 2px blue;
 }

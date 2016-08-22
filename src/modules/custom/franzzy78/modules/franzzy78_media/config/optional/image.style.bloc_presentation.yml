@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: bloc_presentation
+label: 'bloc presentation'
+effects:
+  1d9fd3bd-4489-4879-a38d-89ae64897bb1:
+    uuid: 1d9fd3bd-4489-4879-a38d-89ae64897bb1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 242
+      height: 146

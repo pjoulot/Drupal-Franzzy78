@@ -1,0 +1,31 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloc_presentation.field_bloc_presentation_image
+    - field.field.paragraph.bloc_presentation.field_bloc_presentation_text
+    - paragraphs.paragraphs_type.bloc_presentation
+  module:
+    - text
+id: paragraph.bloc_presentation.default
+targetEntityType: paragraph
+bundle: bloc_presentation
+mode: default
+content:
+  field_bloc_presentation_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: bloc_presentation
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+  field_bloc_presentation_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  created: true
+  uid: true
