@@ -177,7 +177,6 @@ a:hover {
 }
 
 .block-services {
-	background-color: #FBFBFB;
 	display: flex;
 	flex-grow: 1;
 	align-items: center;
@@ -284,10 +283,84 @@ a:hover {
     background-position: -105px -55px;
 }
 
-input[type="submit"] {
-	padding: 10px;
-    border-radius: 10px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    border-radius: solid 2px blue;
+/* Form style */
+
+/* Basic Grey */
+form {
+    margin-left:auto;
+    margin-right:auto;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
+}
+.form-wrapper {
+	margin-top: 20px; 
+}
+form h1 {
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom:1px solid #E4E4E4;
+    margin: -10px -15px 30px -10px;;
+    color: #888;
+}
+form h1>span {
+    display: block;
+}
+form label:not([for="edit-copy"]) {
+    display: block;
+    margin: 0px;
+}
+form label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #888;
+}
+form input[type="text"], form input[type="email"], form textarea, form select {
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+form textarea{
+    padding: 5px 3px 3px 5px;
+}
+form select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right);
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height: 25px;
+}
+form textarea{
+    height:100px;
+}
+form .button {
+    background: #1C909A;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+form .button:hover {
+    background: #59b6bf
 }

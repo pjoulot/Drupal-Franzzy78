@@ -1,0 +1,8 @@
+<ul class="menu-footer-social">
+  {% if content.field_bloc_social_facebook|render %}
+    <li><a href="{{ content.field_bloc_social_facebook }}" class="sprite-social sprite-facebook">Facebook</a></li>
+  {% endif %}
+  {% if content.field_bloc_social_twitter|render %}
+    <li><a href="{{ content.field_bloc_social_twitter }}" class="sprite-social sprite-twitter">Twitter</a></li>
+  {% endif %}
+</ul>

@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: bloc_vignette
+label: 'Bloc Vignette'
+effects:
+  d78e754a-ef60-4a48-a837-e4b10278dc75:
+    uuid: d78e754a-ef60-4a48-a837-e4b10278dc75
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 60
+      height: 60
