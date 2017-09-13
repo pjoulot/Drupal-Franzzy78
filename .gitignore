@@ -3,3 +3,5 @@ data
 .settings
 .project
 releases
+*__INTEG__
+*__PROD__
