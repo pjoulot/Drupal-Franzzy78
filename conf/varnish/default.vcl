@@ -46,14 +46,14 @@ acl editors {
   "localhost";
   "127.0.0.1";
   "::1";
-  "10.0.3.1";  # tocab
+  "10.0.3.1";
 }
 
 
 
 # List of IPs allowed to access the admin interface
 acl admin {
-  "10.0.3.1";  # tocab
+  "10.0.3.1";
 }
 
 
