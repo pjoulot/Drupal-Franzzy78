@@ -1,0 +1,29 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.bloc_vignette
+    - field.field.media.media_image.field_media_bundle_image_img
+    - image.style.bloc_vignette
+    - media_entity.bundle.media_image
+  module:
+    - image
+id: media.media_image.bloc_vignette
+targetEntityType: media
+bundle: media_image
+mode: bloc_vignette
+content:
+  field_media_bundle_image_img:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: bloc_vignette
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

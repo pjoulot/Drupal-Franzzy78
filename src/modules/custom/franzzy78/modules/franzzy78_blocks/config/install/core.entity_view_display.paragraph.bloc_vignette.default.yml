@@ -1,0 +1,31 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloc_vignette.field_bloc_vignette_image
+    - field.field.paragraph.bloc_vignette.field_bloc_vignette_text
+    - paragraphs.paragraphs_type.bloc_vignette
+  module:
+    - text
+id: paragraph.bloc_vignette.default
+targetEntityType: paragraph
+bundle: bloc_vignette
+mode: default
+content:
+  field_bloc_vignette_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: bloc_vignette
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+  field_bloc_vignette_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  created: true
+  uid: true

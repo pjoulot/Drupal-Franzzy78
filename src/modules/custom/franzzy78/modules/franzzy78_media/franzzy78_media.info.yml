@@ -5,8 +5,8 @@ dependencies:
   - entity_browser
   - field
   - file
-  - franzzy78_blocks
   - image
   - language
   - media_entity
+  - text
   - user

@@ -11,6 +11,12 @@ function franzzy78_theme_preprocess_region(&$variables) {
 	}
 	elseif($variables['region'] == 'header') {
 		$variables['attributes']['class'] = "header-website";
+		$node = \Drupal::routeMatch()->getParameter('node');
+		if (!empty($node) && $node->getType() === "page") {
+			if (!empty($node->field_page_description->getValue())) {
+				$variables['description_header'] = $node->field_page_description->getValue()[0]['value'];
+			}
+		}
 	}
 }
 
@@ -22,3 +28,4 @@ function franzzy78_theme_theme_suggestions_block_alter(array &$suggestions, arra
 		array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
 	}
 }
+

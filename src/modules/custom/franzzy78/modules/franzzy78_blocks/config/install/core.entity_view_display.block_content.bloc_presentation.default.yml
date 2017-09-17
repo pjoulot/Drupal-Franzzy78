@@ -1,0 +1,23 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_presentation
+    - field.field.block_content.bloc_presentation.field_bloc_presentation_elements
+  module:
+    - entity_reference_revisions
+id: block_content.bloc_presentation.default
+targetEntityType: block_content
+bundle: bloc_presentation
+mode: default
+content:
+  field_bloc_presentation_elements:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

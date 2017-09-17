@@ -1,0 +1,27 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bloc_presentation_image
+    - media_entity.bundle.media_image
+    - paragraphs.paragraphs_type.bloc_presentation
+id: paragraph.bloc_presentation.field_bloc_presentation_image
+field_name: field_bloc_presentation_image
+entity_type: paragraph
+bundle: bloc_presentation
+label: 'bloc presentation_image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      media_image: media_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

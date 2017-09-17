@@ -1,0 +1,39 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloc_presentation.field_bloc_presentation_image
+    - field.field.paragraph.bloc_presentation.field_bloc_presentation_text
+    - paragraphs.paragraphs_type.bloc_presentation
+  module:
+    - entity_browser
+    - text
+id: paragraph.bloc_presentation.default
+targetEntityType: paragraph
+bundle: bloc_presentation
+mode: default
+content:
+  field_bloc_presentation_image:
+    weight: 1
+    settings:
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      open: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+  field_bloc_presentation_text:
+    weight: 0
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+hidden:
+  created: true
+  status: true
+  uid: true
