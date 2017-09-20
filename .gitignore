@@ -5,3 +5,4 @@ data
 releases
 *__INTEG__
 *__PROD__
+scripts/code-quality
