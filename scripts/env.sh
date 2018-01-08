@@ -4,7 +4,7 @@
 FEATURES=0
 ALLOW_SSH=1
 UPDATE_CONF=0
-SITENAME="franzzy78"
+SITENAME="danpayne"
 
 
 ########## General variables ##########

@@ -10,21 +10,6 @@ backend server1 { # Define one backend
   .host = "127.0.0.1";         # IP or Hostname of backend
   .port = "81";                # Port Apache is listening
   .max_connections = 250;      # That's it
-
-  .probe = {
-    #.url = "/"; # short easy way (GET /)
-    # We prefer to only do a HEAD /en (/ is redirection 302)
-    .request =
-      "HEAD / HTTP/1.1"
-      "Host: ehs-site.lxc"
-      "Connection: close";
-
-    .interval  = 5s; # check the health of each backend every 5 seconds
-    .timeout   = 5s; # timing out after 1 second.
-    .window    = 5;  # If 3 out of the last 5 polls succeeded the backend is considered healthy, otherwise it will be marked as sick
-    .threshold = 3;
-  }
-
   .first_byte_timeout = 300s;  # How long to wait before we receive a first byte from our backend?
   .connect_timeout = 5s;       # How long to wait for a backend connection?
   .between_bytes_timeout = 2s; # How long to wait between bytes received from our backend?
@@ -46,14 +31,14 @@ acl editors {
   "localhost";
   "127.0.0.1";
   "::1";
-  "10.0.3.1";
 }
 
 
 
 # List of IPs allowed to access the admin interface
 acl admin {
-  "10.0.3.1";
+  "localhost";
+  "127.0.0.1";
 }
 
 
@@ -72,6 +57,12 @@ sub vcl_init {
 # which backend to use.
 # also used to modify the request
 sub vcl_recv {
+
+  # Redirect all http request to https.
+  if ( (req.http.host ~ "^(?i)www.franzzy78.lxc" || req.http.host ~ "^(?i)franzzy78.lxc") && req.http.X-Forwarded-Proto !~ "(?i)https") {
+    return (synth(750, ""));
+  }
+
   set req.backend_hint = vdir.backend(); # send all traffic to the vdir director
 
   # Normalize the header, remove the port (in case you're testing this on various TCP ports)
@@ -469,6 +460,12 @@ sub vcl_purge {
 
 
 sub vcl_synth {
+  if (resp.status == 750) {
+    # Redirect to https if it is an http request.
+    set resp.status = 301;
+    set resp.http.Location = "https://franzzy78.lxc" + req.url;
+    return(deliver);
+  }
   if (resp.status == 720) {
     # We use this special error status 720 to force redirects with 301 (permanent) redirects
     # To use this, call the following from anywhere in vcl_recv: return (synth(720, "http://host/new.html"));
