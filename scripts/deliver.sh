@@ -1,13 +1,13 @@
 #!/bin/bash
 
-repourl=https://github.com/pjoulot/danpayne.fr.git
+repourl=https://github.com/pjoulot/Drupal-Franzzy78.git
 
 git clone $repourl /tmp/source
 cd /tmp/source
 git checkout master
 
 
-releasename=release-danpayne
+releasename=release-franzzy78
 
 #PIC ssh key must be on server
 mkdir -p /tmp/releases/${releasename}/drupal

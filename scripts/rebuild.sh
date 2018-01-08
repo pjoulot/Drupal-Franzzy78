@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /home/drupal/danpayne/
+cd /home/drupal/franzzy78/
 composer update
 cd web
 drush cr drush
