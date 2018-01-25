@@ -100,25 +100,6 @@ a:hover {
 	font-size: 140%;
 }
 
-.main-menu {
-	width: 80%;
-	margin: 0;
-	list-style-type: none;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	padding: 0;
-	font-size: 110%;
-}
-
-.main-menu li{
-	margin-right: 20px;
-}
-
-.main-menu li a:hover {
-	font-weight: bold;
-}
-
 .header-main-content {
 	position: absolute;
 	margin-left: auto;
@@ -191,6 +172,7 @@ a:hover {
 	padding: 10px;
 	background-color: #DEDEDE;
 	text-align: justify;
+	margin-bottom: 15px;
 }
 
 .copyright, .menu-footer {
@@ -363,4 +345,129 @@ form .button {
 }
 form .button:hover {
     background: #59b6bf
+}
+
+.main-navigate {
+  width: 100%;
+  height: 60px;
+}
+
+.main-menu {
+
+  margin: 0;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+  height: 100%;
+  width: 80%;
+  font-size: 110%;
+  margin: 0;
+}
+
+.main-menu li {
+  height: 100%;
+}
+
+.main-menu li a {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.main-menu li a:hover {
+  font-weight: bold;
+}
+
+.main-menu a, .main-menu a:visited, .main-menu a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mobile-menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .block-points {
+    flex-direction: column;
+  }
+  .block-services {
+    flex-direction: column;
+  }
+
+  .header-website img {
+    display: none;
+  }
+
+  .header-main-content {
+    color: black;
+    position: relative;
+    top: 0;
+    width: auto;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .header-website::before {
+    background-color: transparent;
+  }
+
+  .main-navigate {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 15px 0 0 0;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    height: 0;
+    transition: height .5s ease;
+    background-color: #2b2c2e;
+    overflow: hidden;
+  }
+  
+  .main-navigate.open .main-menu {
+    height: auto;
+  }
+
+  .main-menu>li{
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .main-menu li {
+    border-bottom: solid 1px #E1E8ED;
+  }
+  
+  .main-navigate a:hover {
+    border: none;
+    padding-top: 0;
+  }
+
+  .mobile-menu-button {
+    width: 30px;
+    height: 28px;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .lines {
+    border-bottom: 17px double #292F33; 
+    border-top: 6px solid #292F33; 
+    content:"";
+    height: 5px; 
+    width:30px;
+  }
 }
