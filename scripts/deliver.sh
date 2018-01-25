@@ -35,7 +35,7 @@ rm -rf /tmp/source/
 echo "The archive is ready to be transfered."
 
 DELIVERY_USER="philippe"
-DELIVERY_SERVER="193.70.0.251"
+DELIVERY_SERVER="137.74.195.141"
 DELIVERY_PORT=22
 DELIVERY_FOLDER="franzzy78"
 
