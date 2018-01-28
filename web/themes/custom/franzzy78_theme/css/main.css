@@ -470,4 +470,30 @@ form .button:hover {
     height: 5px; 
     width:30px;
   }
+
+  .menu-footer {
+    height: auto;
+    flex-direction: column;
+  }
+  
+  .menu-footer ul {
+    flex-direction: column;
+  }
+  
+  .menu-footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-footer .menu-footer-navigate {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  
+  .menu-footer .menu-footer-social {
+    padding-right: 0;
+  }
+  
+  .copyright {
+    padding: 0 5px 0 5px;
+  }
 }
