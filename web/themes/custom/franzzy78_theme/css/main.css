@@ -151,6 +151,11 @@ a:hover {
 
 .page-content {
 	padding: 60px;
+        
+        img {
+          max-width: 100%;
+          height: auto;
+        }
 }
 
 .main-content {
