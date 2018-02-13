@@ -53,11 +53,11 @@
         {
             "type": "package",
             "package": {
-                "name": "owlcarousel",
-                "version": "2.2.1",
+                "name": "flexslider",
+                "version": "2.7.0",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/OwlCarousel2/OwlCarousel2/archive/2.2.1.zip",
+                    "url": "https://github.com/woocommerce/FlexSlider/archive/2.7.0.zip",
                     "type": "zip"
                 }
             }
@@ -72,6 +72,7 @@
         "drupal/console": "~1.0",
         "drupal/config_update": "1.5",
         "drupal/features": "3.5",
+        "drupal/flexslider": "2.0-beta1",
         "drupal/entity": "1.0-beta1",
         "drupal/media_entity": "1.7",
         "drupal/media_entity_image": "1.2",
@@ -97,7 +98,7 @@
         "colorbutton": "4.6",
         "font": "4.6",
         "panelbutton": "4.6",
-        "owlcarousel": "2.2.1"
+        "flexslider": "2.7.0"
     },
     "require-dev": {
         "behat/mink": "~1.7",

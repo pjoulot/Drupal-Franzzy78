@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_slider
+id: block_content.bloc_slider
+target_entity_type_id: block_content
+target_bundle: bloc_slider
+default_langcode: site_default
+language_alterable: false

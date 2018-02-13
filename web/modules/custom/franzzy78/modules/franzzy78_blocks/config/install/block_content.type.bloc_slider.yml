@@ -1,0 +1,7 @@
+langcode: fr
+status: true
+dependencies: {  }
+id: bloc_slider
+label: 'Bloc slider'
+revision: 0
+description: ''

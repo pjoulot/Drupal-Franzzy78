@@ -2,6 +2,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - entity_browser.browser.media_entity_browser
     - field.field.paragraph.bloc_vignette.field_bloc_vignette_image
     - field.field.paragraph.bloc_vignette.field_bloc_vignette_text
     - paragraphs.paragraphs_type.bloc_vignette
@@ -25,6 +26,7 @@ content:
       field_widget_display_settings: {  }
     third_party_settings: {  }
     type: entity_browser_entity_reference
+    region: content
   field_bloc_vignette_text:
     weight: 0
     settings:
@@ -33,6 +35,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea_with_summary
+    region: content
 hidden:
   created: true
   status: true

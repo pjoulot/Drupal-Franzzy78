@@ -1,0 +1,27 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_slider
+    - field.field.block_content.bloc_slider.field_slider_images
+    - flexslider.optionset.default
+  module:
+    - flexslider_fields
+id: block_content.bloc_slider.default
+targetEntityType: block_content
+bundle: bloc_slider
+mode: default
+content:
+  field_slider_images:
+    weight: 1
+    label: above
+    settings:
+      optionset: default
+      image_style: ''
+      caption: '0'
+      image_link: ''
+    third_party_settings: {  }
+    type: flexslider
+    region: content
+hidden:
+  langcode: true

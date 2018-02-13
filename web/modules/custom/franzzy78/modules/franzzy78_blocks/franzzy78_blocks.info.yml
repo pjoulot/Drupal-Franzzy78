@@ -6,7 +6,10 @@ dependencies:
   - entity_browser
   - entity_reference_revisions
   - field
+  - file
+  - flexslider_fields
   - franzzy78_media
+  - image
   - language
   - media_entity
   - paragraphs
