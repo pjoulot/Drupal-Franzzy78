@@ -71,7 +71,7 @@
         "drush/drush": "~8.3",
         "drupal/console": "~1.0",
         "drupal/config_update": "1.5",
-        "drupal/features": "3.5",
+        "drupal/features": "3.7",
         "drupal/flexslider": "2.0-beta1",
         "drupal/entity": "1.0-beta1",
         "drupal/media_entity": "1.7",
