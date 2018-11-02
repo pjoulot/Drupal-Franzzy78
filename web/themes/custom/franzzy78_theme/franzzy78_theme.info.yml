@@ -9,6 +9,3 @@ regions:
   content: Content  # the content region is required
   sidebar_first: 'Sidebar first'
   footer: Footer
-logo:
-  path: 'themes/franzzy78_theme/logo.png'
-  use_default: false
